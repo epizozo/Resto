@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Les Délices de KODJO</title>
+    <!-- Bootstrap CSS en ligne -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mission-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .values-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .values-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .values-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .values-list i {
+            color: #ff6b6b;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-utensils me-2"></i>Les Délices de KODJO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recettes.html">Recettes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-light" href="login.php">Connexion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Notre Histoire</h1>
+            <p class="lead">Découvrez la passion et l'authenticité derrière Les Délices de KODJO</p>
+        </div>
+    </section>
+
+    <!-- Notre Histoire -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="KODJO cuisinant" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">L'histoire des Délices de KODJO</h2>
+                    <p class="lead">Tout a commencé avec une passion pour les saveurs authentiques et le désir de partager la richesse culinaire africaine avec le monde.</p>
+                    <p>KODJO, notre chef fondateur, a grandi dans une famille où la cuisine était bien plus qu'une nécessité - c'était une célébration de la vie, de la culture et de l'amour. Après des années à perfectionner ses compétences dans les cuisines familiales et professionnelles, il a décidé de créer Les Délices de KODJO pour partager cette passion avec un public international.</p>
+                    <p>Aujourd'hui, notre plateforme rassemble des milliers d'amateurs de cuisine autour des recettes traditionnelles réinventées, tout en conservant leur âme authentique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Navbar avec effets spéciaux -->
+    <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-utensils me-2"></i>Resto
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            <span class="nav-link-text">Accueil</span>
+                            <span class="nav-link-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/menu.html"></a>
+                            <span class="nav-link-text">Recettes</span>
+                            <span class="nav-link-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about.html">
+                            <span class="nav-link-text">À propos</span>
+                            <span class="nav-link-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.php">
+                            <span class="nav-link-text">Contact</span>
+                            <span class="nav-link-border"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login">
+                            <i class="fas fa-user me-1"></i>
+                            <span class="nav-link-text">Connexion</span>
+                            <span class="nav-link-border"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-signup" href="#signup">
+                            <i class="fas fa-user-plus me-1"></i>Inscription
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notre Équipe -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Notre Équipe</h2>
+                <p class="lead">Les passionnés qui font vivre Les Délices de KODJO</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="team-member mb-4">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="KODJO" class="mb-3">
+                        <h4>KODJO</h4>
+                        <p class="text-muted">Fondateur & Chef Cuisinier</p>
+                        <p>Expert en cuisine africaine avec plus de 15 ans d'expérience, KODJO est le cœur et l'âme de notre entreprise.</p>
+                        <div class="social-links">
+                            <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="team-member mb-4">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Amina" class="mb-3">
+                        <h4>Amina</h4>
+                        <p class="text-muted">Directrice Marketing</p>
+                        <p>Spécialiste du marketing digital, Amina s'occupe de faire connaître nos délices à travers le monde.</p>
+                        <div class="social-links">
+                            <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="team-member mb-4">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Jean" class="mb-3">
+                        <h4>Jean</h4>
+                        <p class="text-muted">Développeur Web</p>
+                        <p>Expert en expérience utilisateur, Jean s'assure que votre navigation sur notre site soit toujours agréable.</p>
+                        <div class="social-links">
+                            <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Valeurs -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Nos Valeurs</h2>
+                    <ul class="values-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Authenticité :</strong> Nous nous engageons à préserver l'authenticité des recettes tout en les rendant accessibles.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Qualité :</strong> Seuls les meilleurs ingrédients et techniques sont recommandés dans nos recettes.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Partage :</strong> Nous croyons que la cuisine est un langage universel qui rapproche les gens.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Innovation :</strong> Nous réinventons constamment nos méthodes pour vous offrir la meilleure expérience.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Valeurs" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Prêt à explorer nos délices ?</h2>
+            <p class="lead mb-4">Rejoignez notre communauté et commencez votre voyage culinaire dès aujourd'hui.</p>
+            <a href="register.html" class="btn btn-light btn-lg px-4 me-2">S'inscrire</a>
+            <a href="recettes.html" class="btn btn-outline-light btn-lg px-4">Voir les recettes</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-utensils me-2"></i>Les Délices de KODJO</h5>
+                    <p>Partageons la passion de la cuisine africaine avec le monde entier, une recette à la fois.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="recettes.html" class="text-white text-decoration-none">Recettes</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">À propos</a></li>
+                        <li class="mb-2"><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="privacy.html" class="text-white text-decoration-none">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Catégories</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Plats principaux</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Entrées</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Desserts</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Boissons</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Végétariens</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <p>Abonnez-vous pour recevoir nos dernières recettes et offres spéciales.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email">
+                            <button class="btn btn-primary" type="button">S'abonner</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Les Délices de KODJO. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Conçu avec <i class="fas fa-heart text-danger"></i> par l'équipe KODJO</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS en ligne -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
